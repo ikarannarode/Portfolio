@@ -13,7 +13,7 @@ angle=(angle+360)%360;
 card.style.setProperty('--start',angle+60);
   }
   return (
-<div className="card card-border timeline-card rounded-xl p-10"ref={(el)=>(cardRefs.current[index]=el)} onMouseMove={handleMouseMove(index)}>
+<div className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"ref={(el)=>(cardRefs.current[index]=el)} onMouseMove={handleMouseMove(index)}>
     <div className="glow">
     </div>
     <div className='flex items-center gap-1 mb-5'>
